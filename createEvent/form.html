@@ -1,0 +1,91 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <title>Register Form</title>
+</head>
+<body>
+ <form action="insert.php" method="POST">
+  <table>
+    <tr>
+     <td>Event Category :</td>
+     <td>
+      <select name="eventCategory" required>
+       <option selected hidden value="">Select Event Category</option>
+       <option value="curricular">Curricular</option>
+       <option value="coCurricular">Co-Curricular</option>
+      </select>
+     </td>
+    </tr>
+   <tr>
+    <td>Event Name :</td>
+    <td><input type="text" name="eventName" required></td>
+   </tr>
+   <tr>
+    <td>Event Description :</td>
+    <td><input type="text" name="eventInformation" required></td>
+   </tr>
+   <tr>
+    <td>Organizer's Name :</td>
+    <td><input type="text" name="organizerName" required></td>
+   </tr>
+   <tr>
+    <td>Venue :</td>
+    <td><input type="text" name="venue" required></td>
+   </tr>
+   <tr>
+    <td>Objectives :</td>
+    <td><input type="text" name="objectives" required></td>
+   </tr>
+  <!-- <tr>
+    <td>Action Plan :</td>
+    <td><input type="text" name="actionPlan" required></td>
+   </tr>
+   <tr>
+   <tr>
+    <td>Start Date :</td>
+    <td><input type="date" name="startDate" required></td>
+    <td><input type="time" name="startTime" required></td>
+   </tr>
+   <tr>
+    <td>End Date :</td>
+    <td><input type="date" name="endDate" required></td>
+    <td><input type="time" name="endTime" required></td>
+  </tr>
+  <tr>
+    <td>Venue Setup</td>
+    <td><form action="upload.php" method="post" enctype="multipart/form-data">
+   Select file to upload:
+   <input type="file" name="fileToUpload" id="fileToUpload">
+   <input type="submit" value="Upload File" name="submit">
+ </form></td>
+  </tr>
+  <tr>
+    <td>Event Poster</td>
+    <td><form action="upload.php" method="post" enctype="multipart/form-data">
+   Select file to upload:
+   <input type="file" name="fileToUpload" id="fileToUpload">
+   <input type="submit" value="Upload File" name="submit">
+ </form></td>
+  </tr>
+  <tr>
+   <td>Maximum No. Of Participant :</td>
+   <td><input type="number" name="maxNumOfRegistrants" required></td>
+ </tr>-->
+     <tr>
+    <td>Competition Structure :</td>
+    <td>
+     <select name="competitionStructure" required>
+      <option selected hidden value="">Select Competition Structure</option>
+      <option value="singleElimination">Single Elimination</option>
+      <option value="doubleElimination">Double Elimination</option>
+      <option value="roundRobin">Round Robin</option>
+     </select>
+    </td>
+   </tr>
+   <tr>
+    <td><input type="submit" value="Submit"></td>
+   </tr>
+  </table>
+  </form>
+  </body>
+  </html>
