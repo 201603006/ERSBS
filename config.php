@@ -1,5 +1,0 @@
-<?php
-	$smtphost = "";
-	$smtpuser = "";
-	$smtppass = "";
-?>
